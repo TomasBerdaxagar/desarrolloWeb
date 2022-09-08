@@ -1,0 +1,210 @@
+*{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+body{
+    background-image:url("../img/descarga\ \(1\).png");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+p{
+    padding: 60px;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    border: grey solid 2px;
+    display: inline-block;
+    
+}
+
+h2{
+    padding: 50px;
+    margin: 50px;
+   
+}
+
+table{
+    padding: 50px;
+    margin: 90px;
+    width: 530px;
+    height: 300px;
+    border: grey solid 2px;
+    display: inline-block;   
+}
+
+
+
+ul{
+    padding: 20px;
+    list-style-type: none ;
+    margin: 10px;
+    background-color: rgb(247, 167, 20);
+    
+    
+
+    display: grid;
+    grid-template-columns: repeat(5, 3fr);
+    grid-template-rows: auto;
+
+}
+
+li{
+    display: grid;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(255, 198, 112);
+    padding: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 3px);
+    justify-self: center;
+    align-self: center;
+   
+}
+
+li a{
+    text-decoration: none;
+    color: black;   
+    
+}
+
+li :hover{
+    color: yellow;
+    font-weight: bold;
+    
+}
+
+
+h4{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+
+
+
+.contenedor{
+    width: 80%;
+	margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "img img"
+        "nav nav" 
+        "productos productos"
+        "servicios servicios"
+        "contacto contacto"
+        "ubicacion ubicacion"
+        "somos somos" 
+        "footer footer"
+        "hijo1 hijo1"
+        "hijo2 hijo2"
+    
+}
+
+.img{
+    grid-area: img;
+    margin: 40px;
+}
+
+
+.nav{
+    grid-area:nav;
+    color:black;
+	height: 90px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.productos{
+    grid-area:productos;
+    background-image:url(../img/black-metal.jpg);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.servicios{
+    grid-area:servicios;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contacto{
+    grid-area:contacto;
+    margin: 60px;
+    padding: 20px;
+}
+
+.ubicacion{
+    grid-area:ubicacion;
+}
+
+.somos{
+    grid-area:somos;
+    background-image:url(../img/black-metal.jpg);
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.footer{
+    grid-area:footer;
+    text-align: center;
+    width: 90%;
+    padding: 30px;
+    margin: 30px;
+    
+    
+}
+
+.hijo1{
+    grid-area: footer;
+    width: 40%;
+    float: right;
+    
+    
+}
+
+.hijo2{
+    grid-area: footer;
+    width: 40%;
+    float: unset;
+    
+    
+
+}
+
+@media only screen and (max-width:1200px){
+    body{
+        background-color: white;
+        background-image: url(../img/fondo.jpg);
+    }
+}
+
+@media only screen and (max-width:760px){
+    body{
+        background-color: black;
+        background-image: url(../img/motor.jpg);
+    }
+}
+
+
+
+
+        
+ 
+ 
