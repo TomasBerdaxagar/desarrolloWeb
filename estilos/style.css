@@ -67,8 +67,17 @@ li{
     grid-template-rows: repeat(5, 3px);
     justify-self: center;
     align-self: center;
-   
+    width: 90px; height: 15px;
+    transition: all 0.5s
+    
 }
+
+li:hover{
+    height: 15px; width: 90px;
+    padding: 15px;
+    background-color: rgb(204, 95, 6);
+}
+
 
 li a{
     text-decoration: none;
@@ -155,8 +164,8 @@ h4{
 
 .somos{
     grid-area:somos;
-    background-image:url(../img/black-metal.jpg);
-    color: white;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(196, 160, 4));
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 2rem;
 }
